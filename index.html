@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Updated path -->
+</head>
+<body class="container">
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <main>
+        <p>My name is Evan, and this is my first website.</p>
+        <div class="center">
+            <img src="assets/bean.jpg" alt="bean" class="responsive-img" id="peter-img">
+            <p><strong>Click da bean</strong></p>
+        </div>
+        <audio id="peter-audio" src="assets/bean.mp3"></audio>
+    </main>
+    <footer>
+        <p>&copy; 2024 Evan Akhurst - All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('peter-img').addEventListener('click', function() {
+            document.getElementById('peter-audio').play();
+        });
+    </script>
+</body>
+</html>
